@@ -108,6 +108,7 @@ void main() {
       Print1();
       print('The percentage is: ${(num1! / num2!) * 100}');
       break;
+    //condition for percentage
     case 'power':
       Print1();
       print('The power is: ${pow(
@@ -115,6 +116,7 @@ void main() {
         num2!,
       )}');
       break;
+    //condition for percentage
     case 'cube':
       Print2();
       print('The cube is: ${pow(
@@ -122,6 +124,7 @@ void main() {
         3,
       )}');
       break;
+    //condition for percentage
     case 'avg':
       average1();
       break;

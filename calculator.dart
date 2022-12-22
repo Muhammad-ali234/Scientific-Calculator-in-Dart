@@ -46,62 +46,62 @@ void main() {
     //condition for sum
     case '+':
       Print1();
-      print('The Sum of two num is: $num1! + num2!');
+      print('The Sum of two num is: ${num1! + num2!}');
       break;
     //condition for subtraction
     case '-':
       Print1();
-      print('The Subtraction of two number is: $num1! - num2!');
+      print('The Subtraction of two number is: ${num1! - num2!}');
       break;
     //condition for division
     case '/':
       Print1();
-      print('The Division of two number is: $num1! / num2!');
+      print('The Division of two number is: ${num1! / num2!}');
       break;
     //condition for multiplication
     case '*':
       Print1();
-      print('The Multiply of Two number is: $num1! * num2!');
+      print('The Multiply of Two number is: ${num1! * num2!}');
       break;
     //condition for square root
     case 'sqrt':
       Print2();
-      print('The squre root is: $sqrt(num1!)');
+      print('The squre root is: ${sqrt(num1!)}');
       break;
     //condition for sin
     case 'sin':
       Print2();
-      print('The Sin theta is: $sin(num1!)');
+      print('The Sin theta is: ${sin(num1!)}');
       break;
     //condition for cos
     case 'cos':
       Print2();
-      print('The Cos theta is: $cos(num1!)');
+      print('The Cos theta is: ${cos(num1!)}');
       break;
     //condition for tan
     case 'tan':
       Print2();
-      print('The tan theta is: $tan(num1!)');
+      print('The tan theta is: ${tan(num1!)}');
       break;
     //condition for acos
     case 'acos':
       Print2();
-      print('The acos Theta is: $acos(num1!)');
+      print('The acos Theta is: ${acos(num1!)}');
       break;
     //condition for asin
     case 'asin':
       Print2();
-      print('The asin Theta is: $asin(num1!)');
+      print('The asin Theta is: ${asin(num1!)}');
       break;
     //condition for atan
     case 'atan':
       Print2();
-      print('The atan Theta is: $atan(num1!)');
+      print('The atan Theta is: ${atan(num1!)}');
       break;
     //condition for log
     case 'log':
       Print2();
-      print('The Log is: $log(num1!)');
+      print('The Log is: ${log(num1!)}');
       break;
     //condition for percentage
     case '%':

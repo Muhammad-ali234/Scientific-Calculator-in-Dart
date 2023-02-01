@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:math';
 
-average1() {
+findAverage() {
   List list = [];
   print('Enter the total number  you want to find average:');
   int num = int.parse(stdin.readLineSync()!);
@@ -18,16 +18,18 @@ average1() {
 }
 
 void main() {
+  print("--------------------------------------");
   print("Welcome to the scientific calculator!");
+  print("--------------------------------------");
 
-  print(
-      "Enter the operation (+, -, *, /, sqrt, sin, cos, tan, acos, asin , atan, %, log, avg,power,cube):");
+
+  print("Enter the operation (+, -, *, /, sqrt, sin, cos, tan, acos, asin , atan, %, log, avg,power,cube):");
   String operation = stdin.readLineSync()!;
 
   double? num1, num2;
 
   //function to provide input used for +,-,/,%,power
-  Print1() {
+  arithemicCalc() {
     print("Enter the first number(if power it is base):");
     num1 = double.parse(stdin.readLineSync()!);
 
@@ -36,7 +38,7 @@ void main() {
   }
 
   //function to provide input for sqrt,sin,cos,tan,acos,asin,atan,%,log
-  Print2() {
+  tigonometircCal() {
     print("Enter the number:");
     num1 = double.parse(stdin.readLineSync()!);
   }
@@ -45,67 +47,67 @@ void main() {
 
     //condition for sum
     case '+':
-      Print1();
+      arithemicCalc();
       print('The Sum of two num is: ${num1! + num2!}');
       break;
     //condition for subtraction
     case '-':
-      Print1();
+      arithemicCalc();
       print('The Subtraction of two number is: ${num1! - num2!}');
       break;
     //condition for division
     case '/':
-      Print1();
+      arithemicCalc();
       print('The Division of two number is: ${num1! / num2!}');
       break;
     //condition for multiplication
     case '*':
-      Print1();
+      arithemicCalc();
       print('The Multiply of Two number is: ${num1! * num2!}');
       break;
     //condition for square root
     case 'sqrt':
-      Print2();
+      tigonometircCal();
       print('The squre root is: ${sqrt(num1!)}');
       break;
     //condition for sin
     case 'sin':
-      Print2();
+      tigonometircCal();
       print('The Sin theta is: ${sin(num1!)}');
       break;
     //condition for cos
     case 'cos':
-      Print2();
+      tigonometircCal();
       print('The Cos theta is: ${cos(num1!)}');
       break;
     //condition for tan
     case 'tan':
-      Print2();
+      tigonometircCal();
       print('The tan theta is: ${tan(num1!)}');
       break;
     //condition for acos
     case 'acos':
-      Print2();
+      tigonometircCal();
       print('The acos Theta is: ${acos(num1!)}');
       break;
     //condition for asin
     case 'asin':
-      Print2();
+      tigonometircCal();
       print('The asin Theta is: ${asin(num1!)}');
       break;
     //condition for atan
     case 'atan':
-      Print2();
+      tigonometircCal();
       print('The atan Theta is: ${atan(num1!)}');
       break;
     //condition for log
     case 'log':
-      Print2();
+      tigonometircCal();
       print('The Log is: ${log(num1!)}');
       break;
     //condition for percentage
     case '%':
-      Print1();
+      arithemicCalc();
       print('The percentage is: ${(num1! / num2!) * 100}');
       break;
     //condition for percentage
@@ -118,7 +120,7 @@ void main() {
       break;
     //condition for percentage
     case 'cube':
-      Print2();
+      tigonometircCal();
       print('The cube is: ${pow(
         num1!,
         3,
@@ -126,7 +128,7 @@ void main() {
       break;
     //condition for percentage
     case 'avg':
-      average1();
+      findAverage();
       break;
     //condition for wrong input
     default:

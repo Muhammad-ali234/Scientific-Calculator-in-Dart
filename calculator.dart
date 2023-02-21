@@ -1,20 +1,28 @@
 import 'dart:io';
 import 'dart:math';
 
-findAverage() {
+void findAverage() {
   List list = [];
-  print('Enter the total number  you want to find average:');
-  int num = int.parse(stdin.readLineSync()!);
-  double average = 0;
-  for (int i = 0; i < num; i++) {
-    print('Enter value to add in List:${i + 1}');
+  int totalNumber = 0;
+  double average = 0.00;
+  print('Enter Size : ');
+
+  // Promt user for size of total numbers
+  totalNumber = int.parse(stdin.readLineSync()!);
+
+  for (int i = 0; i < totalNumber; i++) {
+    print('Enter Value at: ${i + 1}: ');
+    // Get value  from user
     int value = int.parse(stdin.readLineSync()!);
+    // Store value in list
     list.insert(i, value);
+    // Sum total value of list
+    average = average + list[i];
   }
-  for (int j = 0; j < num; j++) {
-    average = list[j] + average;
-  }
-  print('The average is :${average / list.length}');
+  // Calculate String and Round it off to 2 decimal places
+  average = (average / list.length);
+  String avg = average.toStringAsFixed(2);
+  print('Average is: ${avg}');
 }
 
 void main() {
